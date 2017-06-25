@@ -1,0 +1,147 @@
+-- Select --
+Generic programmes and qualifications not further defined 
+Basic programmes and qualifications 
+Literacy and numeracy 
+Personal skills and development
+Generic programmes and qualifications not elsewhere classified
+Education not further defined 
+Education science
+Training for pre-school teachers
+Teacher training without subject specialisation 
+Education not elsewhere classified
+Inter-disciplinary programmes and qualifications involving education
+Arts and humanities not further defined
+Arts not further defined 
+Audio-visual techniques and media production 
+Fashion, interior and industrial design
+Fine arts
+Handicrafts
+Music and performing arts 
+Arts not elsewhere classified 
+Humanities (except languages) not further defined
+Religion and theology 
+History and archaeology 
+Philosophy and ethics
+Humanities (except languages) not elsewhere classified
+Languages not further defined
+Language acquisition
+Literature and linguistics 
+Languages not elsewhere classified
+Inter-disciplinary programmes and qualifications involving arts and humanities
+Arts and humanities not elsewhere classified 
+Social sciences, journalism and information not further defined 
+Social and behavioural sciences not further defined 
+Economics 
+Political sciences and civics
+Psychology
+Sociology and cultural studies 
+Social and behavioural sciences not elsewhere classified
+Journalism and information not further defined
+Journalism and reporting 
+Library, information and archival studies
+Journalism and information not elsewhere classified 
+Inter-disciplinary programmes and qualifications involving social sciences, journalism and information
+Social sciences, journalism and information not elsewhere classified 
+Business, administration and law not further defined 
+Business and administration not further defined 
+Accounting and taxation
+Finance, banking and insurance
+Management and administration
+Marketing and advertising
+Secretarial and office work
+Wholesale and retail sales 
+Work skills Business and administration not elsewhere classified 
+Law
+Inter-disciplinary programmes and qualifications involving business, administration and law
+Business, administration and law not elsewhere classified 
+Natural sciences, mathematics and statistics not further defined
+Biological and related sciences not further defined 
+Biology
+Biochemistry 
+Biological and related sciences not elsewhere classified 
+Environment not further defined
+Environmental sciences
+Natural environments and wildlife
+Environment not elsewhere classified
+Physical sciences not further defined
+Chemistry
+Earth sciences
+Physics
+Physical sciences not elsewhere classified
+Mathematics and statistics not further defined
+Mathematics
+Statistics
+Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics
+Natural sciences, mathematics and statistics not elsewhere classified
+Information and Communication Technologies (ICTs) not further defined
+Computer use 
+Database and network design and administration 
+Software and applications development and analysis 
+Information and Communication Technologies (ICTs) not elsewhere classified 
+Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)
+Engineering, manufacturing and construction not further defined
+Engineering and engineering trades not further defined 
+Chemical engineering and processes
+Environmental protection technology 
+Electricity and energy
+Mechanics and metal trades
+Motor vehicles, ships and aircraft 
+Engineering and engineering trades not elsewhere classified
+Manufacturing and processing not further defined
+Food processing 
+Materials 
+Textiles
+Mining and extraction 
+Manufacturing and processing not elsewhere classified 
+Architecture and construction not further defined 
+Architecture and town planning
+Building and civil engineering
+Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction
+Engineering, manufacturing and construction not elsewhere classified 
+Agriculture, forestry, fisheries and veterinary not further defined
+Agriculture not further defined
+Crop and livestock production
+Horticulture 
+Agriculture not elsewhere classified
+Forestry 
+Fisheries
+Veterinary
+Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 
+Agriculture, forestry, fisheries and veterinary not elsewhere classified 
+Health and welfare not further defined
+Health not further defined 
+Dental studies 
+Medicine
+Nursing and midwifery
+Medical diagnostic and treatment technology 
+Therapy and rehabilitation 
+Pharmacy
+Traditional and complementary medicine and therapy 
+Health not elsewhere classified
+Welfare not further defined 
+Care of the elderly and of disabled adults
+Child care and youth services
+Social work and counselling
+Welfare not elsewhere classified
+Inter-disciplinary programmes and qualifications involving health and welfare 
+Health and welfare not elsewhere classified
+Services not further defined
+Personal services not further defined 
+Domestic services 
+Hair and beauty services 
+Hotel, restaurants and catering 
+Sports
+Travel, tourism and leisure
+Personal services not elsewhere classified
+Hygiene and occupational health services not further defined 
+Community sanitation
+Occupational health and safety
+Hygiene and occupational health services not elsewhere classified
+Security services not further defined 
+Military and defence 
+Protection of persons and property
+Security services not elsewhere classified
+Transport services 
+Inter-disciplinary programmes and qualifications involving services 
+Services not elsewhere classified
+Field unknown

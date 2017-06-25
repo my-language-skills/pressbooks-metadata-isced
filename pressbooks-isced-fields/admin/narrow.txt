@@ -1,0 +1,59 @@
+-- Select --
+Generic programmes and qualifications not further defined 
+Basic programmes and qualifications
+Literacy and numeracy 
+Personal skills and development
+Generic programmes and qualifications not elsewhere classified
+Education 
+Inter-disciplinary programmes and qualifications involving education 
+Arts and humanities not further defined
+Arts
+Humanities (except languages)  
+Languages
+Inter-disciplinary programmes and qualifications involving arts and humanities
+Arts and humanities not elsewhere classified 
+Social sciences, journalism and information not further defined 
+Social and behavioural sciences
+Journalism and information 
+Inter-disciplinary programmes and qualifications involving social sciences, journalism and information
+Social sciences, journalism and information not elsewhere classified 
+Business, administration and law not further defined 
+Business and administration 
+Law
+Inter-disciplinary programmes and qualifications involving business, administration and law
+Business, administration and law not elsewhere classified 
+Natural sciences, mathematics and statistics not further defined
+Biological and related sciences
+Environment
+Physical sciences 
+Mathematics and statistics
+Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 
+Natural sciences, mathematics and statistics not elsewhere classified 
+Information and Communication Technologies (ICTs) 
+Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs) 
+Engineering, manufacturing and construction not further defined
+Engineering and engineering trades 
+Manufacturing and processing 
+Architecture and construction
+Inter-disciplinary programmes and qualifications involving engineering, manufacturing and construction 
+Engineering, manufacturing and construction not elsewhere classified
+Agriculture, forestry, fisheries and veterinary not further defined
+Agriculture
+Forestry
+Fisheries 
+Veterinary
+Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 
+Agriculture, forestry, fisheries and veterinary not elsewhere classified 
+Health and welfare not further defined 
+Health 
+Welfare
+Inter-disciplinary programmes and qualifications involving health and welfare 
+Health and welfare not elsewhere classified
+Services not further defined 
+Personal services
+Hygiene and occupational health services 
+Security services 
+Transport services
+Inter-disciplinary programmes and qualifications involving services
+Services not elsewhere classified
+Field unknown 
