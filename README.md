@@ -14,7 +14,8 @@ License:  [![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)]
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Description  
-With this plugin you can choose in Pb settings the type of select you want to see the book info. You can choose between **LANGUAGES**, **BROAD FIELDS**, **NARROW FIELDS**, **DETAILED FIELDS**. If you choose languages then a select with 30 languages will be displayed, if you choose Broad fields the first column of **ISCED FIELD** will be displayed, if you choose narrow fields the second column of **ISCED FIELD** will be displayed, and finally if you select detailed fields the third column of **ISCED FIELD** will be displayed.
+With this plugin you can choose in Pb settings the type of select you want to see the book info. You can choose between **LANGUAGES**, **BROAD FIELDS**, **NARROW FIELDS**, **DETAILED FIELDS**. If you choose languages then a select with 30 languages will be displayed, if you choose Broad fields the first column of **ISCED FIELD** will be displayed, if you choose narrow fields the second column of **ISCED FIELD** will be displayed, and finally if you select detailed fields the third column of **ISCED FIELD** will be displayed. We use boilerplate 3.0 version to create this plugin.
+
 
 This is the link to see **ISCED FIELDS**, [ISCED](http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf).
 
