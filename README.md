@@ -49,16 +49,16 @@ You can see all of the screenshots of the plugin [here](https://github.com/Books
 * **ADDITIONS**
 
 	* New option page: **ISCED FIELD** in Pressbooks Metadata Settings
-	* New radio-buttons
-	 	* New radio button: **Languages** in Pressbooks Metadata Settings
-	 	* New radio button: **Broad Fields** in Pressbooks Metadata Settings
-	 	* New radio button: **Narrow Fields** in Pressbooks Metadata Settings
-	 	* New radio button: **Detailed Fields** in Pressbooks Metadata Settings
-	* New select field (Only one of them is created): 
-	 	* New select: **languages** in Book info.
-	 	* New select: **broad** in Book info.
-	 	* New select: **narrow** in Book info.
-	 	* New select: **detailed** in Book info.
+	* New radio-buttons in Pressbooks Metadata Settings
+	 	* **Languages**
+	 	* **Broad Fields**
+	 	* **Narrow Fields**
+	 	* **Detailed Fields**
+	* New select field in Book Info (Only one of them is created): 
+	 	* **languages**
+	 	* **broad**
+	 	* **narrow**
+	 	* **detailed**
 
  	* In **Pressbooks_Isced_Fields** class 
 
