@@ -39,7 +39,7 @@ Plugin works with:
 The Pressbooks plugin is supplied "as is" and all use is at your own risk.
 
 ## Screenshots 
-You can see all of the screenshots of the plugin [here](https://github.com/Books4Languages/pressbooks-metadata-related_content/blob/master/pressbooks-related-content/screenshots/screenshots.md).
+You can see all of the screenshots of the plugin [here](https://github.com/Books4Languages/pressbooks-metadata-isced/blob/master/pressbooks-isced-fields/screenshots/screenshots.md).
 ## Roadmap
 
 
