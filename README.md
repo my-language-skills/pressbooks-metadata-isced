@@ -7,9 +7,9 @@ Tags: pressbooks, links
 Tested up to: [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)](https://wordpress.org/download/)
 
 
-Stable tag: [![Current Release](https://img.shields.io/github/release/Books4Languages/pressbooks-metadata.svg)](https://github.com/Books4Languages/pressbooks-metadata/releases/latest/)
+Stable tag: [![Current Release](https://img.shields.io/github/release/Books4Languages/pressbooks-metadata-isced.svg)](https://github.com/Books4Languages/pressbooks-metadata-isced/releases/latest/)
 
-License:  [![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)](https://github.com/Books4Languages/pressbooks-metadata/blob/master/license.txt)
+License:  [![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)](https://github.com/Books4Languages/pressbooks-metadata-isced/blob/master/license.txt)
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
