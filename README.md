@@ -75,7 +75,7 @@ You can see all of the screenshots of the plugin [here](https://github.com/Books
 		* New function:  **options_checkbox**, this function create and registrate a new section and fields. 
 		* New function: **ISCED_callback($args)**, is section callback that creates a checkboxs of new section.
 		* New function: **option_checked**. It verifies that radio button has been selected ans returns the value selected.
-		* New function: **add_checkboxs**, according to the information received from ** option_checked **, it creates a select field with the information that is in the corresponding file. There are 4 files that contain columns of FIELDS ISCED and one more that contains 30 languages.
+		* New function: **add_checkboxs**, according to the information received from **option_checked**, it creates a select field with the information that is in the corresponding file. There are 4 files that contain columns of FIELDS ISCED and one more that contains 30 languages.
 
 
 
