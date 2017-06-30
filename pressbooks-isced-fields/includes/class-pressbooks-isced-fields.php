@@ -152,8 +152,9 @@ class Pressbooks_Isced_Fields {
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
+		//call the function options_checkbox of admin class
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'options_checkbox' );
+		// call the function add_checkboxs of admin class
 		$this->loader->add_action( 'custom_metadata_manager_init_metadata', $plugin_admin, 'add_checkboxs',31 );
 
 	}

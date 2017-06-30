@@ -49,13 +49,17 @@ You can see all of the screenshots of the plugin [here](https://github.com/Books
 ### 0.1
 * **ADDITIONS**
 
-	* New option page: **ISCED FIELD** in Pressbooks Metadata Settings
-	* New radio-buttons in Pressbooks Metadata Settings
+	* New section page: **ISCED FIELD** 
+
+	* New radio-buttons in section
+
 	 	* **Languages**
 	 	* **Broad Fields**
 	 	* **Narrow Fields**
 	 	* **Detailed Fields**
-	* New select field in Book Info (Only one of them is created): 
+
+	* New select field in Book Info (Only one of them is created)
+
 	 	* **languages**
 	 	* **broad**
 	 	* **narrow**
@@ -63,16 +67,15 @@ You can see all of the screenshots of the plugin [here](https://github.com/Books
 
  	* In **Pressbooks_Isced_Fields** class 
 
- 		* New action: **admin_init**, this action call the **options_checkbox** function of **Pressbooks_Isced_Fields_Admin** class.
- 		* New action: **custom_metadata_manager_init_metadata**, this action call the **add_checkboxs** of **Pressbooks_Isced_Fields_Admin** class.
+ 		* New action: **admin_init**, this action call the **options_checkbox**.
+ 		* New action: **custom_metadata_manager_init_metadata**, this action call the **add_checkboxs**.
 
 	* In **Pressbooks_Isced_Fields_Admin** class 	
 
-		* New function:  **options_checkbox**, this function create and registrate a new section and fields in **pressbooks-metadata_options_page**.
-		* New function: **option_isced_callback($args)**, this function is the one that is in charge of paiting the radio buttons in pressbooks metadata options page.(code **HTML**). It receives as argument the arrat that is created when we created the setting field. We create **4** radio buttons. One for languages, other for broad fields, other for narrow fields, and other for detailed fields.
-		* New function: **ISCED_callback**,  this function is the section callback. It's responsible for demonstrating a brief explanation of the settings fields.
-		* New function: **option_checked**, this function is responsible for collecting information in the database. It verifies that radio button (languages, broad, narrow, detailed) has been selected. According to this information it returns one value or another. This function can returns: lang, broad, narrow or detailed.
-		* New function: **add_checkboxs**, this function is responsible for creating the different select according to the information received from the **option_checked** function. If it receives 'lang' then it will create a select field with the information that is in the file **langu.txt**. This file contains the 30 most important languages. If it receives 'broad' then it will create a select field with the information that is in the file **broad.txt**. This files contain the first column of ISCED FIELDS. If it receives 'narrow' then it will create a select field with the information that is in the file **narrow.txt**. This files contain the second column of ISCED FIELDS. If it receives 'detailed' then it will create a select field with the information that is in the file **detailed.txt**. This files contain the third column of ISCED FIELDS. 
+		* New function:  **options_checkbox**, this function create and registrate a new section and fields. 
+		* New function: **ISCED_callback($args)**, is section callback that creates a checkboxs of new section.
+		* New function: **option_checked**. It verifies that radio button has been selected ans returns the value selected.
+		* New function: **add_checkboxs**, according to the information received from ** option_checked **, it creates a select field with the information that is in the corresponding file. There are 4 files that contain columns of FIELDS ISCED and one more that contains 30 languages.
 
 
 
