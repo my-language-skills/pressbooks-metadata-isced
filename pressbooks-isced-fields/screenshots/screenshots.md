@@ -6,7 +6,7 @@ You have to click on PB Metadata to see the new section.
 
 Below is shows the new section within PM settings
 
-![ISCED SECTION IN PM SETTINGS](https://github.com/Books4Languages/pressbooks-metadata-isced/blob/master/pressbooks-isced-fields/screenshots/isced_section.JPG)
+![ISCED SECTION IN PM SETTINGS](https://github.com/Books4Languages/pressbooks-metadata-isced/blob/master/pressbooks-isced-fields/screenshots/SECTION.JPG)
 
 What is shown if we select Broad Fields in PM settings
 
