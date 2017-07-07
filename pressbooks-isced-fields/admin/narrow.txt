@@ -17,7 +17,7 @@ Social and behavioural sciences
 Journalism and information 
 Inter-disciplinary programmes and qualifications involving social sciences, journalism and information
 Social sciences, journalism and information not elsewhere classified 
-Business, administration and law not further defined 
+Business, administration and law not further defined 
 Business and administration 
 Law
 Inter-disciplinary programmes and qualifications involving business, administration and law
@@ -29,7 +29,7 @@ Physical sciences
 Mathematics and statistics
 Inter-disciplinary programmes and qualifications involving natural sciences, mathematics and statistics 
 Natural sciences, mathematics and statistics not elsewhere classified 
-Information and Communication Technologies (ICTs) 
+Information and Communication Technologies (ICTs) 
 Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs) 
 Engineering, manufacturing and construction not further defined
 Engineering and engineering trades 
@@ -44,10 +44,10 @@ Fisheries
 Veterinary
 Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 
 Agriculture, forestry, fisheries and veterinary not elsewhere classified 
-Health and welfare not further defined 
+Health and welfare not further defined 
 Health 
 Welfare
-Inter-disciplinary programmes and qualifications involving health and welfare 
+Inter-disciplinary programmes and qualifications involving health and welfare 
 Health and welfare not elsewhere classified
 Services not further defined 
 Personal services
@@ -56,4 +56,4 @@ Security services
 Transport services
 Inter-disciplinary programmes and qualifications involving services
 Services not elsewhere classified
-Field unknown 
+Field unknown 

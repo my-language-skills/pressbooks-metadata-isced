@@ -1,10 +1,10 @@
 -- Select --
-Generic programmes and qualifications not further defined 
+Generic programmes and qualifications not further defined 
 Basic programmes and qualifications 
 Literacy and numeracy 
 Personal skills and development
 Generic programmes and qualifications not elsewhere classified
-Education not further defined 
+Education not further defined 
 Education science
 Training for pre-school teachers
 Teacher training without subject specialisation 
@@ -16,7 +16,7 @@ Audio-visual techniques and media production
 Fashion, interior and industrial design
 Fine arts
 Handicrafts
-Music and performing arts 
+Music and performing arts 
 Arts not elsewhere classified 
 Humanities (except languages) not further defined
 Religion and theology 
@@ -30,14 +30,14 @@ Languages not elsewhere classified
 Inter-disciplinary programmes and qualifications involving arts and humanities
 Arts and humanities not elsewhere classified 
 Social sciences, journalism and information not further defined 
-Social and behavioural sciences not further defined 
+Social and behavioural sciences not further defined 
 Economics 
 Political sciences and civics
 Psychology
 Sociology and cultural studies 
 Social and behavioural sciences not elsewhere classified
 Journalism and information not further defined
-Journalism and reporting 
+Journalism and reporting 
 Library, information and archival studies
 Journalism and information not elsewhere classified 
 Inter-disciplinary programmes and qualifications involving social sciences, journalism and information
@@ -58,7 +58,7 @@ Natural sciences, mathematics and statistics not further defined
 Biological and related sciences not further defined 
 Biology
 Biochemistry 
-Biological and related sciences not elsewhere classified 
+Biological and related sciences not elsewhere classified 
 Environment not further defined
 Environmental sciences
 Natural environments and wildlife
@@ -76,14 +76,14 @@ Natural sciences, mathematics and statistics not elsewhere classified
 Information and Communication Technologies (ICTs) not further defined
 Computer use 
 Database and network design and administration 
-Software and applications development and analysis 
+Software and applications development and analysis 
 Information and Communication Technologies (ICTs) not elsewhere classified 
 Inter-disciplinary programmes and qualifications involving Information and Communication Technologies (ICTs)
 Engineering, manufacturing and construction not further defined
 Engineering and engineering trades not further defined 
 Chemical engineering and processes
 Environmental protection technology 
-Electricity and energy
+Electricity and energy
 Mechanics and metal trades
 Motor vehicles, ships and aircraft 
 Engineering and engineering trades not elsewhere classified
@@ -101,9 +101,9 @@ Engineering, manufacturing and construction not elsewhere classified
 Agriculture, forestry, fisheries and veterinary not further defined
 Agriculture not further defined
 Crop and livestock production
-Horticulture 
+Horticulture 
 Agriculture not elsewhere classified
-Forestry 
+Forestry 
 Fisheries
 Veterinary
 Inter-disciplinary programmes and qualifications involving agriculture, forestry, fisheries and veterinary 
@@ -116,14 +116,14 @@ Nursing and midwifery
 Medical diagnostic and treatment technology 
 Therapy and rehabilitation 
 Pharmacy
-Traditional and complementary medicine and therapy 
+Traditional and complementary medicine and therapy 
 Health not elsewhere classified
 Welfare not further defined 
 Care of the elderly and of disabled adults
 Child care and youth services
 Social work and counselling
 Welfare not elsewhere classified
-Inter-disciplinary programmes and qualifications involving health and welfare 
+Inter-disciplinary programmes and qualifications involving health and welfare 
 Health and welfare not elsewhere classified
 Services not further defined
 Personal services not further defined 
@@ -139,9 +139,9 @@ Occupational health and safety
 Hygiene and occupational health services not elsewhere classified
 Security services not further defined 
 Military and defence 
-Protection of persons and property
+Protection of persons and property
 Security services not elsewhere classified
-Transport services 
+Transport services 
 Inter-disciplinary programmes and qualifications involving services 
 Services not elsewhere classified
 Field unknown

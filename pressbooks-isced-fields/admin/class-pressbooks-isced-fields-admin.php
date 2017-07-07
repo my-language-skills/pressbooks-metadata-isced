@@ -222,11 +222,11 @@ class Pressbooks_Isced_Fields_Admin {
 			    
 				// we create a new select field in creative-work group in Book Info,the values of this select field is the array.
 				x_add_metadata_field('pb_isced_field_metadata','metadata', array(
-					'group' 		=>	'creative-work',
+					'group' 		=>	'educational-information',
 					'field_type' 	=>	'select',
 					'values' 		=>	$a,
-					'label' 		=> 	'ISCED field of languages',
-					'description' 	=> 	'Broad field of languages according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>'
+					'label' 		=> 	'Field of languages',
+					'description' 	=> 	'The most important languages.'. '<br>'
 				) );
 			
 			
@@ -248,7 +248,7 @@ class Pressbooks_Isced_Fields_Admin {
 			    }
 			    // we create a new select field in creative-work group in Book Info,the values of this select field is the array.
 				x_add_metadata_field('pb_isced_field_broad','metadata', array(
-					'group' 		=>	'creative-work',
+					'group' 		=>	'educational-information',
 					'field_type' 	=>	'select',
 					'values' 		=>	$a,
 					'label' 		=> 	'Broad ISCED field ',
@@ -275,7 +275,7 @@ class Pressbooks_Isced_Fields_Admin {
 			    }
 			    // we create a new select field in creative-work group in Book Info,the values of this select field is the array.
 				x_add_metadata_field('pb_isced_field_narrow','metadata', array(
-					'group' 		=>	'creative-work',
+					'group' 		=>	'educational-information',
 					'field_type' 	=>	'select',
 					'values' 		=>	$na,
 					'label' 		=> 	'Narrow ISCED field ',
@@ -299,7 +299,7 @@ class Pressbooks_Isced_Fields_Admin {
 			    }
 			    // we create a new select field in creative-work group in Book Info,the values of this select field is the array.
 				x_add_metadata_field('pb_isced_field_detailed','metadata', array(
-					'group' 		=>	'creative-work',
+					'group' 		=>	'educational-information',
 					'field_type' 	=>	'select',
 					'values' 		=>	$na,
 					'label' 		=> 	'Detailed ISCED field ',
