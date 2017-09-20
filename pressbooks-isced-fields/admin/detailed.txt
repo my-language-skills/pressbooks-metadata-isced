@@ -1,4 +1,4 @@
--- Select --
+--Select--
 Generic programmes and qualifications not further defined 
 Basic programmes and qualifications 
 Literacy and numeracy 
@@ -131,7 +131,8 @@ Domestic services
 Hair and beauty services 
 Hotel, restaurants and catering 
 Sports
-Travel, tourism and leisure
+
+Travel, tourism and leisure
 Personal services not elsewhere classified
 Hygiene and occupational health services not further defined 
 Community sanitation

@@ -1,10 +1,10 @@
 # Screenshots
 
-You have to click on PB Metadata to see the new section.
+You have to click on settings to see the options page
 
 ![PM SETTINGS](https://github.com/Books4Languages/pressbooks-metadata-isced/blob/master/pressbooks-isced-fields/screenshots/settings_PB_Metadata.JPG)
 
-Below is shows the new section within PM settings
+Below you can see the options page
 
 ![ISCED SECTION IN PM SETTINGS](https://github.com/Books4Languages/pressbooks-metadata-isced/blob/master/pressbooks-isced-fields/screenshots/SECTION.JPG)
 

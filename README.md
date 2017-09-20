@@ -1,6 +1,6 @@
 ## Pressbooks-metadata-for-languages
  
-Contributors: @colomet,  @nicoleacuna
+Contributors: @colomet,  @nicoleacuna, @MashRoofa
 
 Tags: pressbooks, links
 
@@ -14,7 +14,7 @@ License:  [![License](https://img.shields.io/badge/license-GPL--2.0%2B-red.svg)]
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 ## Description  
-With this plugin you can choose in Pb settings the type of select you want to see the book info. You can choose between **LANGUAGES**, **BROAD FIELDS**, **NARROW FIELDS**, **DETAILED FIELDS**. If you choose languages then a select with 30 languages will be displayed, if you choose Broad fields the first column of **ISCED FIELD** will be displayed, if you choose narrow fields the second column of **ISCED FIELD** will be displayed, and finally if you select detailed fields the third column of **ISCED FIELD** will be displayed. We use boilerplate 3.0 version to create this plugin.
+This plugin is an add on plugin used to extend the educational vocabulary 'isced-field' property from the All In One Metadata Plugin'. You can choose between **LANGUAGES**, **BROAD FIELDS**, **NARROW FIELDS**, **DETAILED FIELDS**. If you choose languages then a select with 30 languages will be displayed, if you choose Broad fields the first column of **ISCED FIELD** will be displayed, if you choose narrow fields the second column of **ISCED FIELD** will be displayed, and finally if you select detailed fields the third column of **ISCED FIELD** will be displayed. We use boilerplate 3.0 version to create this plugin.
 
 
 This is the link to see **ISCED FIELDS**, [ISCED](http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf).
@@ -33,7 +33,7 @@ Plugin works with:
 
 - [![Pressbooks](https://img.shields.io/badge/Pressbooks-V%203.9.9-red.svg)](https://github.com/pressbooks/pressbooks/releases/tag/3.9.9)
 
-- This plugin requires having the pressbooks-metadata plugin enabled.
+- This plugin requires having the [All In One Metadata](https://github.com/Books4Languages/pressbooks-metadata) plugin enabled.
 
 
 ## Disclaimers 
@@ -58,7 +58,7 @@ You can see all of the screenshots of the plugin [here](https://github.com/Books
 	 	* **Narrow Fields**
 	 	* **Detailed Fields**
 
-	* New select field in Book Info (Only one of them is created)
+	* New select field in Book Info and Site Meta
 
 	 	* **languages**
 	 	* **broad**
@@ -67,15 +67,15 @@ You can see all of the screenshots of the plugin [here](https://github.com/Books
 
  	* In **Pressbooks_Isced_Fields** class 
 
- 		* New action: **admin_init**, this action call the **options_checkbox**.
- 		* New action: **custom_metadata_manager_init_metadata**, this action call the **add_checkboxs**.
+ 		* New action: **admin_init**, this action call the **register_isced_setting**.
+ 		* New action: **admin_menu**, this action call the **options_page_generate**.
 
 	* In **Pressbooks_Isced_Fields_Admin** class 	
 
-		* New function:  **options_checkbox**, this function create and registrate a new section and fields. 
-		* New function: **ISCED_callback($args)**, is section callback that creates a checkboxs of new section.
-		* New function: **option_checked**. It verifies that radio button has been selected ans returns the value selected.
-		* New function: **add_checkboxs**, according to the information received from **option_checked**, it creates a select field with the information that is in the corresponding file. There are 4 files that contain columns of FIELDS ISCED and one more that contains 30 languages.
+		* New function:  **options_page_generate**, this function creates the options page. 
+		* New function: **register_isced_setting**, Creates and registers the setting for the radio buttons.
+		* New function: **render_isced_options**, Renders the radio buttons on the options page.
+		* New function: **get_isced_field**, This function outputs an array to the All In One Metadata plugin, this array sets up the isced field.
 
 
 
