@@ -1,9 +1,10 @@
 <?php
 
+
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       Nicole
+ * @link       Nicole Acuna - Christos Amyrotos
  * @since      1.0.0
  *
  * @package    Pressbooks_Isced_Fields
@@ -99,109 +100,68 @@ class Pressbooks_Isced_Fields_Admin {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/pressbooks-isced-fields-admin.js', array( 'jquery' ), $this->version, false );
 
 	}
-	/*
-	*
-	* This function create a new section and new field in
-	* one tab of pressbooks metadata options page.
-	*
-	* @since 0.1
-	*/
-	public function options_checkbox(){
 
-	
-    	//create a new section called ISCED_FIELD
-	    add_settings_section(  
-	    'ISCED_FIELD', // Section ID 
-	    'ISCED FIELD', // Section Title
-	    array( $this, 'ISCED_callback'), // Callback
-	    'pressbooks-related-content_isced_options_page' // What Page?  
-	    );
-
-	    //register the setting field
-	    register_setting( 'pressbooks-related-content_isced_options_page', 'options_isced' );
-
+    /**
+     * This function is responsible for setting up the
+     * options page for the plugin
+     *
+     */
+	function options_page_generate(){
+        add_options_page(
+            'All In One Metadata ISCED Fields',
+            'Isced Fields',
+            'manage_options',
+            'isced_fields_options',
+            array($this,'render_isced_options')
+        );
     }
 
-    /*
-    * This function is the one that is in charge of painting
-    * in pressboks-metadata_options_page the radio buttons (code html).
-    * It receives as argument the array that is created when we created 
-    * the setting field
-	* And also is the section Callback
-	* It is responsible for demonstrating a brief explanation of the 
-	* settings fields.
-	* @since 0.1
-	*/
-	function ISCED_callback($args) { // Section Callback
-		//demonstrating a brief explanation of the settings fields.
-	    echo '<p> Choose one of the ISCED fields of education and training or Languages field </p>';  
-	    ?>
-	    <!-- create the radio buttons in page -->
-	    <input type="radio"  name="options_isced"  value="lang" <?php checked(lang, get_option('options_isced'), true); ?> checked />  LANGUAGES  
-	    </br>
-	    </br>
-	    <input type="radio"  name="options_isced"  value="broad" <?php checked(broad, get_option('options_isced'), true); ?>  /> BROAD FIELDS
-	    </br>
-	    </br>
-	    <input type="radio"  name="options_isced"  value="narrow" <?php checked(narrow, get_option('options_isced'), true); ?>  /> NARROW FIELDS
-	     </br>
-	    </br>
-	    <input type="radio"  name="options_isced"  value="detailed" <?php checked(detailed, get_option('options_isced'), true); ?>  /> DETAILED FIELDS
-	     
-	 	<?php
-	}
-
-
-	/**
-	* This function is responsible for collecting information 
-	* in the database. It verifies that radio button 
-	* (languages, broad, narrow, detailed) has been selected.
-	* According to this information it returns one value or another.
-	*
-	*/
-	public function option_checked() {
-		global $wpdb;
-		//access to database in table that prefix is options.
-		$table_op = $wpdb->prefix .'options';
-		//Take the value of options_isced field.
-		$op_res = $wpdb->get_results("SELECT option_value FROM $table_op WHERE  option_name='options_isced' ");		
-		//for for option_isced
-        foreach($op_res as $option_name) {
-        	//take tha value of options_isced
-		    $op_res=$option_name->option_value;
-		    // if the value is lang returns lang
-		    if($op_res=='lang')
-		     	$res= 'lang';
-		    //if the value is broad returns broad
-		    else if($op_res=='broad')
-		    	$res='broad';
-		    //if the value is narrow returns narrow
-		    else if($op_res=='narrow')
-		    	$res='narrow';
-		    //if the value is detailed returns detailed
-		    else if($op_res=='detailed')
-		    	$res='detailed';
-		}
-		
-		return $res;
+    /**
+     * This function is responsible for registering the
+     * setting for the radio button
+     *
+     */
+    function register_isced_setting(){
+        register_setting('isced_options_group', 'isced_settings');
     }
+
+    /**
+     * This function is responsible for rendering the
+     * options page
+     *
+     */
+    function render_isced_options() { ?>
+        <div>
+            <h2>Options</h2>
+            <form method="post" action="options.php">
+                <?php
+                settings_fields('isced_options_group');
+                $options = get_option('isced_settings');
+                ?>
+                <p> Choose one of the ISCED fields of education and training or Languages field to show in the educational metabox</p>
+                <input type="radio" name="isced_settings[radio1]" value="languages" <?php checked('languages', $options['radio1']); ?> />LANGUAGES<br />
+                <input type="radio" name="isced_settings[radio1]" value="broad_fields" <?php checked('broad_fields', $options['radio1']); ?> />BROAD FIELDS<br />
+                <input type="radio" name="isced_settings[radio1]" value="narow_fields" <?php checked('narow_fields', $options['radio1']); ?> />NARROW FIELDS<br />
+                <input type="radio" name="isced_settings[radio1]" value="detailed_fields" <?php checked('detailed_fields', $options['radio1']); ?> />DETAILED FIELDS<br />
+                <?php submit_button(); ?>
+            </form>
+        </div>
+    <?php }
 
     /*
     * This function is responsible for creating the different 
     * select according to the information received from the  
     * option_checked function.
-    *
-    *
-    */	
-	public function add_checkboxs(){
-		//call the option_checked function
-		$op_check=$this->option_checked();
-		
+    */
+	public static function get_isced_field(){
+		$option = get_option('isced_settings');
+		$selectedRadio = $option['radio1'];
+
 		//This switch is used to create a select or another depending 
 		//on the parameter that is passed.
-		switch ($op_check) {
+		switch ($selectedRadio) {
 			// if the  $op_check is lang
-			case 'lang':
+			case 'languages':
 				//create array
 				$a=array();
 				//open the langu.txt file
@@ -220,19 +180,11 @@ class Pressbooks_Isced_Fields_Admin {
 			        $a[$opti]=$lan; 
 			    }
 			    
-				// we create a new select field in creative-work group in Book Info,the values of this select field is the array.
-				x_add_metadata_field('pb_isced_field_metadata','metadata', array(
-					'group' 		=>	'educational-information',
-					'field_type' 	=>	'select',
-					'values' 		=>	$a,
-					'label' 		=> 	'Field of languages',
-					'description' 	=> 	'The most important languages.'. '<br>'
-				) );
-			
-			
+				return array('isced_field' => array(true,'Field of languages','The most important languages.',$a));
 				break;
+
 			// if the  $op_check is broad
-			case 'broad':
+			case 'broad_fields':
 				//create array
 				$a=array();
 				//open the broad.txt file
@@ -246,20 +198,11 @@ class Pressbooks_Isced_Fields_Admin {
 			    	//save the value in asociative array  				    	
 			        $a[$opti]=$archivo[$i]; 
 			    }
-			    // we create a new select field in creative-work group in Book Info,the values of this select field is the array.
-				x_add_metadata_field('pb_isced_field_broad','metadata', array(
-					'group' 		=>	'educational-information',
-					'field_type' 	=>	'select',
-					'values' 		=>	$a,
-					'label' 		=> 	'Broad ISCED field ',
-					'description' 	=> 	'Broad field  according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>'
-				) );
+				return array('isced_field' => array(true,'Broad ISCED field','Broad field according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>',$a));
+			   break;
 
-
-				
-				break;
 			//// if the  $op_check is narrow
-			case 'narrow':
+			case 'narow_fields':
 				//create array
 				$na=array();
 				//open the narrow.txt file
@@ -273,17 +216,11 @@ class Pressbooks_Isced_Fields_Admin {
 			    	//save the value in asociative array  	
 			        $na[$opti]=$archivo[$i]; 
 			    }
-			    // we create a new select field in creative-work group in Book Info,the values of this select field is the array.
-				x_add_metadata_field('pb_isced_field_narrow','metadata', array(
-					'group' 		=>	'educational-information',
-					'field_type' 	=>	'select',
-					'values' 		=>	$na,
-					'label' 		=> 	'Narrow ISCED field ',
-					'description' 	=> 	'Narrow field  according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>'
-				) );
+				return array('isced_field' => array(true,'Narrow ISCED field','Narrow field according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>',$na));
 				break;
+
 			//// if the  $op_check is detailed
-			case 'detailed':
+			case 'detailed_fields':
 				//create array
 				$na=array();
 				//open the detailed.txt file
@@ -297,20 +234,11 @@ class Pressbooks_Isced_Fields_Admin {
 			    	//save the value in asociative array  			    
 			        $na[$opti]=$archivo[$i]; 
 			    }
-			    // we create a new select field in creative-work group in Book Info,the values of this select field is the array.
-				x_add_metadata_field('pb_isced_field_detailed','metadata', array(
-					'group' 		=>	'educational-information',
-					'field_type' 	=>	'select',
-					'values' 		=>	$na,
-					'label' 		=> 	'Detailed ISCED field ',
-					'description' 	=> 	'Detailed field  according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>'
-				) );
+			    return array('isced_field' => array(true,'Detailed ISCED field','Detailed field according to ISCED-F 2013.'. '<br><a target="_blank" href="http://alliance4universities.eu/wp-content/uploads/2017/03/ISCED-2013-Fields-of-education.pdf">Click Here for more information</a>',$na));
 				break;
-			default:
-				# code...
-				break;
-		}
-		
 
+				default:
+				return null;
+		}
 	}
 }

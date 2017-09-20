@@ -8,17 +8,14 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              Nicole
  * @since             1.0.0
  * @package           Pressbooks_Isced_Fields
  *
  * @wordpress-plugin
- * Plugin Name:       pressbooks-isced-fields
- * Plugin URI:        pressbooks-isced-fields
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin Name:       All In One Metadata - Isced Fields
+ * Description:       This is an addon plugin for the All In One Metadata plugin
  * Version:           1.0.0
- * Author:            Nicole
- * Author URI:        Nicole
+ * Author:            Nicole Acuna - Christos Amyrotos
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       pressbooks-isced-fields
